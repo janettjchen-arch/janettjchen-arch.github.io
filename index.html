@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janet Chen (陳亭妤) | AI 數位行銷 & 電商策略顧問</title>
+  <meta name="description" content="Janet Chen 的個人品牌與專案作品集。專注於 AI 自動化工作流、SEO / GEO 搜尋最佳化、電商全通路營運與數據驅動行銷。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              900: '#0c4a6e',
+            },
+            accent: {
+              500: '#6366f1',
+              600: '#4f46e5',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .gradient-hero {
+      background: radial-gradient(circle at 15% 25%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+                  radial-gradient(circle at 85% 75%, rgba(2, 132, 199, 0.09) 0%, transparent 45%);
+    }
+    .typing-dot {
+      animation: typingAnimation 1.4s infinite ease-in-out both;
+    }
+    .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+    .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+    @keyframes typingAnimation {
+      0%, 80%, 100% { transform: scale(0); opacity: 0.4; }
+      40% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-40 glass-nav transition-all duration-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-accent-600 flex items-center justify-center text-white font-bold shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          JC
+        </div>
+        <div class="leading-tight">
+          <span class="font-extrabold text-slate-900 text-lg tracking-tight">Janet Chen</span>
+          <span class="block text-xs font-semibold text-slate-500">AI & E-Commerce</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#about" class="hover:text-brand-600 transition-colors">關於我</a>
+        <a href="#skills" class="hover:text-brand-600 transition-colors">核心專長</a>
+        <a href="#projects" class="hover:text-brand-600 transition-colors">專案成果</a>
+        <a href="#contact" class="hover:text-brand-600 transition-colors">聯絡諮詢</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button onclick="toggleChat(true)" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-slate-900 text-white hover:bg-brand-600 transition-all shadow-sm hover:shadow-md hover:scale-102">
+          <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          與 AI 客服對話
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 md:pt-40 md:pb-28 gradient-hero relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-50 border border-brand-100 text-brand-700 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            AI 賦能 ✕ 數據驅動 ✕ 全通路電商成長
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15]">
+            將 <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-600 via-accent-600 to-indigo-600">生成式 AI</span> 轉化為<br>實質業務成長動能
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            我是 <strong class="text-slate-900 font-semibold">Janet Chen（陳亭妤）</strong>。專注於電商營運架構、Prompt Engineering、AI Agent 自動化流程以及 GEO / SEO 搜尋流量佈局，協助品牌實現高效率降本增效與營收突破。
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#projects" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-brand-600 to-accent-600 text-white shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all">
+              探索精選專案
+            </a>
+            <button onclick="toggleChat(true)" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300 transition-all shadow-sm">
+              即時詢問 AI 助理 💬
+            </button>
+          </div>
+
+          <!-- Stats Bar -->
+          <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center">
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-slate-900">50+</div>
+              <div class="text-xs font-medium text-slate-500 mt-0.5">專案輔導與導入</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-slate-900">320%</div>
+              <div class="text-xs font-medium text-slate-500 mt-0.5">最高搜尋流量成長</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-slate-900">70%</div>
+              <div class="text-xs font-medium text-slate-500 mt-0.5">營運流程人力節省</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Card Mockup -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <div class="absolute -inset-2 bg-gradient-to-r from-brand-500 to-accent-500 rounded-3xl blur-xl opacity-20 transform -rotate-1"></div>
+            
+            <div class="relative bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-xl space-y-6">
+              <div class="flex items-center gap-4">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-400 to-indigo-600 flex items-center justify-center text-white text-2xl font-black shadow-md">
+                  JC
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900">陳亭妤 (Janet Chen)</h3>
+                  <p class="text-xs font-semibold text-brand-600">AI Marketing & E-Commerce Lead</p>
+                  <p class="text-xs text-slate-400 mt-0.5">📍 台灣 • 台北 / 台中</p>
+                </div>
+              </div>
+
+              <div class="space-y-3 text-xs sm:text-sm text-slate-600 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span><strong>AI 自動化工作流</strong>：n8n、Make、Claude & GPT API</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span><strong>新世代 GEO / SEO</strong>：生成式引擎優化與關鍵字矩陣</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span><strong>電商數據決策</strong>：GA4 追蹤、轉換率優化 (CRO)</span>
+                </div>
+              </div>
+
+              <div class="p-3.5 bg-brand-50/70 border border-brand-100 rounded-2xl flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                  </span>
+                  <span class="text-xs font-bold text-slate-700">右下角專屬 AI 客服連線中</span>
+                </div>
+                <button onclick="toggleChat(true)" class="text-xs font-bold text-brand-700 hover:text-brand-800 underline">
+                  立即體驗 →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white border-y border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-bold tracking-wider text-brand-600 uppercase mb-2">About Me</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900">融合技術思維與商業洞察的行銷實踐者</h3>
+        <p class="text-sm text-slate-500 mt-3">致力於將複雜的生成式 AI 與自動化技術落地於企業真實場景，讓科技為營收說話。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center font-bold text-lg">💡</div>
+          <h4 class="font-bold text-slate-900 text-base">人機協作思維</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            AI 不僅是代筆工具，更是流程重塑的核心。透過結構化提示詞（Prompt Engineering）與邏輯鏈設計，將繁瑣的行政、客服與文案流程自動化。
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-lg">📈</div>
+          <h4 class="font-bold text-slate-900 text-base">數據指標導向</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            拒絕盲目追逐熱點，每一次 AI 導入皆緊扣核心業務指標（KPI）— 包括獲客成本（CAC）、訂單轉換率（CVR）與顧客終生價值（LTV）。
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-lg">⚡</div>
+          <h4 class="font-bold text-slate-900 text-base">敏捷落地實踐</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            從 Google Apps Script 輕量化後端、No-Code 串接，到客製化 AI 客服機器人，以極速原型（MVP）驗證商業模式，實現快速迭代。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-bold tracking-wider text-brand-600 uppercase mb-2">Core Competencies</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900">核心專長與技術能力矩陣</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Skill 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">🤖</div>
+          <h4 class="font-bold text-slate-900 text-lg">AI & 提示工程</h4>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li>• ChatGPT / Claude / Gemini 深度提示</li>
+            <li>• 思維鏈 (CoT) 與 Few-shot 架構設計</li>
+            <li>• Midjourney / Canva AI 視覺素材生成</li>
+            <li>• AI Agent 智能體系統構建</li>
+          </ul>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-accent-50 text-accent-600 flex items-center justify-center text-xl">⚙️</div>
+          <h4 class="font-bold text-slate-900 text-lg">自動化工作流</h4>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li>• Google Apps Script (GAS) 雲端串接</li>
+            <li>• n8n / Zapier / Make 自動化管道</li>
+            <li>• OpenRouter / OpenAI API 整合</li>
+            <li>• 電商訂單與客戶信件自動處理</li>
+          </ul>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">🔍</div>
+          <h4 class="font-bold text-slate-900 text-lg">SEO & GEO 搜尋最佳化</h4>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li>• 生成式搜尋引擎最佳化 (GEO)</li>
+            <li>• On-page / Technical SEO 網站架構</li>
+            <li>• AI 批量高品質長尾關鍵字文章</li>
+            <li>• Google Search Console 數據監控</li>
+          </ul>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl">🛒</div>
+          <h4 class="font-bold text-slate-900 text-lg">電商全通路運營</h4>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li>• 品牌官網、Shopee、Momo 運營架構</li>
+            <li>• 促銷檔期（雙11、618）企劃與執行</li>
+            <li>• GA4 漏斗轉換率 (CRO) 深度分析</li>
+            <li>• 智慧進銷存與庫存預測協作</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-bold tracking-wider text-brand-600 uppercase mb-2">Featured Projects</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900">精選專案與實戰案例</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-xl transition-all">
+          <div class="h-44 bg-gradient-to-tr from-slate-900 to-indigo-900 p-6 flex flex-col justify-between text-white relative">
+            <span class="self-start px-2.5 py-1 rounded-md text-[10px] font-bold bg-white/20 backdrop-blur-md">AI 自動化實踐</span>
+            <div class="font-bold text-lg">跨境電商 AI 智能客服與自動建檔系統</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <p class="text-xs text-slate-600 leading-relaxed">
+              整合 GAS 與 OpenRouter Claude 模型，打造 24 小時自動回覆客服與訂單狀態推播系統，減少 75% 重複性客服負擔。
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">Google Apps Script</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">OpenRouter API</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">Webhook</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-xl transition-all">
+          <div class="h-44 bg-gradient-to-tr from-sky-900 to-teal-800 p-6 flex flex-col justify-between text-white relative">
+            <span class="self-start px-2.5 py-1 rounded-md text-[10px] font-bold bg-white/20 backdrop-blur-md">搜尋增長專案</span>
+            <div class="font-bold text-lg">新世代 GEO / SEO 關鍵字矩陣佈局</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <p class="text-xs text-slate-600 leading-relaxed">
+              透過生成式 AI 撰寫高知識濃度的領域權威文章，佈局 Perplexity 與 Google 搜尋引文，使全站自然曝光成長 320%。
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">GEO 優化</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">長尾關鍵字</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">GA4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-xl transition-all">
+          <div class="h-44 bg-gradient-to-tr from-purple-900 to-pink-900 p-6 flex flex-col justify-between text-white relative">
+            <span class="self-start px-2.5 py-1 rounded-md text-[10px] font-bold bg-white/20 backdrop-blur-md">電商大型檔期</span>
+            <div class="font-bold text-lg">年度購物節促銷戰略與動態素材工廠</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <p class="text-xs text-slate-600 leading-relaxed">
+              運用 Midjourney 批量生成 200+ 商品情境圖，搭配分群文案自動推播，活動期間點擊率（CTR）提升 45%，營業額破千萬。
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">Midjourney</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">電商企劃</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 text-slate-600 font-medium">A/B Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-white/10 text-brand-300 border border-white/10">
+        Let's Connect
+      </div>
+      <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">準備好為您的業務注入 AI 與增長動能了嗎？</h3>
+      <p class="text-sm sm:text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
+        無論是想評估企業內部 AI 自動化流程、建立專屬 AI 助理，或是諮詢電商搜尋流量成長方案，歡迎隨時聯絡我。
+      </p>
+
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+        <a href="mailto:contact@janetchen.tw" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-brand-500 hover:bg-brand-600 text-white transition-all shadow-lg shadow-brand-500/20">
+          寄信聯絡我
+        </a>
+        <button onclick="toggleChat(true)" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-white/10 hover:bg-white/20 text-white border border-white/15 transition-all">
+          直接與 AI 客服交談
+        </button>
+      </div>
+
+      <div class="pt-12 text-xs text-slate-500 border-t border-slate-800">
+        © 2026 Janet Chen (陳亭妤). All rights reserved. Built with GitHub Pages & Google Apps Script.
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 右下角 AI 智能客服機器人 WIDGET ==================== -->
+  
+  <!-- Floating Button -->
+  <div id="chat-widget-btn-container" class="fixed bottom-6 right-6 z-50">
+    <button onclick="toggleChat()" class="relative group flex items-center gap-2.5 px-4 py-3 bg-gradient-to-r from-slate-900 via-indigo-950 to-brand-900 text-white rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all border border-slate-700/60">
+      <div class="relative">
+        <!-- Robot Icon -->
+        <svg class="w-6 h-6 text-emerald-400 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h.01M15 9h.01"/>
+        </svg>
+        <span class="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+        </span>
+      </div>
+      <span class="text-xs font-bold tracking-wide">AI 智能客服</span>
+    </button>
+  </div>
+
+  <!-- Chat Window Modal -->
+  <div id="chat-modal" class="fixed bottom-6 right-6 z-50 w-[92vw] sm:w-[410px] h-[580px] max-h-[85vh] bg-white rounded-3xl shadow-2xl border border-slate-200/90 flex flex-col overflow-hidden hidden transition-all duration-300">
+    
+    <!-- Header -->
+    <div class="px-5 py-4 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white flex items-center justify-between border-b border-slate-700">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-brand-500 flex items-center justify-center text-white shadow-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h.01M15 9h.01"/>
+          </svg>
+        </div>
+        <div>
+          <div class="text-sm font-bold flex items-center gap-2">
+            Janet 的 AI 智能助理
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          </div>
+          <div class="text-[11px] text-slate-300">OpenRouter Claude 賦能</div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-1.5">
+        <!-- Settings Button -->
+        <button onclick="toggleSettingsModal()" title="設定 GAS 網址" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </button>
+
+        <!-- Close Button -->
+        <button onclick="toggleChat(false)" title="關閉視窗" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Settings Overlay Drawer -->
+    <div id="settings-panel" class="hidden bg-slate-900/95 text-white p-4 border-b border-slate-700 space-y-3 z-10 transition-all">
+      <div class="flex items-center justify-between">
+        <span class="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
+          <span>⚙️</span> 客服後端 GAS 網址設定
+        </span>
+        <button onclick="toggleSettingsModal(false)" class="text-xs text-slate-400 hover:text-white">✕ 關閉</button>
+      </div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">
+        請貼上您部署 Google Apps Script 為 Web 應用程式產生的網址（結尾通常為 <code class="text-amber-300 font-mono">/exec</code>）：
+      </p>
+      <div class="space-y-2">
+        <input id="gas-url-input" type="url" placeholder="https://script.google.com/macros/s/.../exec" class="w-full text-xs px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500">
+        <div class="flex items-center justify-between gap-2 pt-1">
+          <span id="gas-status-badge" class="text-[10px] text-slate-400">目前：尚未設定</span>
+          <button onclick="saveGasUrl()" class="px-4 py-1.5 text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">
+            儲存網址
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Messages Container -->
+    <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3.5 bg-slate-50 text-xs sm:text-[13px]">
+      
+      <!-- Welcome Message from Bot -->
+      <div class="flex items-start gap-2.5">
+        <div class="w-7 h-7 rounded-lg bg-slate-900 text-emerald-400 flex-shrink-0 flex items-center justify-center font-bold text-xs">
+          🤖
+        </div>
+        <div class="bg-white p-3.5 rounded-2xl rounded-tl-sm border border-slate-200/80 shadow-sm text-slate-700 max-w-[85%] space-y-1.5 leading-relaxed">
+          <p>您好！我是 Janet 的 AI 智能助理 🌟</p>
+          <p>我可以向您介紹 Janet 的<strong>核心專長</strong>、<strong>AI 自動化專案經驗</strong>、以及<strong>電商行銷策略</strong>。</p>
+          <p class="text-[11px] text-slate-400 pt-1 border-t border-slate-100">
+            💡 提示：若尚未設定 GAS 網址，可點選右上角 ⚙️ 按鈕填入您的 Web App 網址。
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Typing Indicator (hidden by default) -->
+    <div id="typing-indicator" class="hidden px-5 py-2 bg-slate-50 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-500">
+      <div class="flex items-center gap-1">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-600 typing-dot"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-600 typing-dot"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-600 typing-dot"></span>
+      </div>
+      <span>Janet AI 正在思考中...</span>
+    </div>
+
+    <!-- Input Footer -->
+    <form id="chat-form" onsubmit="handleSendMessage(event)" class="p-3 bg-white border-t border-slate-200 flex items-center gap-2">
+      <input id="chat-input" type="text" placeholder="輸入訊息詢問 Janet 的經歷或專案..." autocomplete="off" class="flex-1 text-xs sm:text-[13px] px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-brand-500 focus:bg-white transition-all text-slate-800 placeholder-slate-400">
+      <button type="submit" class="p-2.5 rounded-xl bg-slate-900 hover:bg-brand-600 text-white transition-colors flex items-center justify-center">
+        <svg class="w-4 h-4 transform rotate-90" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+        </svg>
+      </button>
+    </form>
+
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script>
+    const STORAGE_KEY = 'janet_ai_gas_endpoint_url';
+    let chatHistory = [];
+
+    function initChatbot() {
+      const savedUrl = localStorage.getItem(STORAGE_KEY) || '';
+      const input = document.getElementById('gas-url-input');
+      const badge = document.getElementById('gas-status-badge');
+      if (savedUrl) {
+        input.value = savedUrl;
+        badge.innerHTML = '目前：<span class="text-emerald-400 font-semibold">已設定網址 ✓</span>';
+      } else {
+        badge.innerHTML = '目前：<span class="text-amber-400 font-semibold">未設定（請點儲存）</span>';
+      }
+    }
+
+    function toggleChat(forceOpen) {
+      const modal = document.getElementById('chat-modal');
+      const btnContainer = document.getElementById('chat-widget-btn-container');
+      const isCurrentlyOpen = !modal.classList.contains('hidden');
+      
+      const shouldOpen = forceOpen !== undefined ? forceOpen : !isCurrentlyOpen;
+
+      if (shouldOpen) {
+        modal.classList.remove('hidden');
+        btnContainer.classList.add('hidden');
+        setTimeout(() => document.getElementById('chat-input').focus(), 150);
+      } else {
+        modal.classList.add('hidden');
+        btnContainer.classList.remove('hidden');
+      }
+    }
+
+    function toggleSettingsModal(forceState) {
+      const panel = document.getElementById('settings-panel');
+      const isCurrentlyOpen = !panel.classList.contains('hidden');
+      const shouldOpen = forceState !== undefined ? forceState : !isCurrentlyOpen;
+      
+      if (shouldOpen) {
+        panel.classList.remove('hidden');
+        document.getElementById('gas-url-input').focus();
+      } else {
+        panel.classList.add('hidden');
+      }
+    }
+
+    function saveGasUrl() {
+      const input = document.getElementById('gas-url-input');
+      const url = input.value.trim();
+      const badge = document.getElementById('gas-status-badge');
+
+      if (!url) {
+        localStorage.removeItem(STORAGE_KEY);
+        badge.innerHTML = '目前：<span class="text-amber-400 font-semibold">已清除網址</span>';
+        alert('已清除 GAS 網址');
+        return;
+      }
+
+      if (!url.startsWith('https://script.google.com/')) {
+        if (!confirm('此網址看起來不像是 Google Apps Script 網址（通常以 https://script.google.com/ 開頭），確定要儲存嗎？')) {
+          return;
+        }
+      }
+
+      localStorage.setItem(STORAGE_KEY, url);
+      badge.innerHTML = '目前：<span class="text-emerald-400 font-semibold">已設定網址 ✓</span>';
+      alert('GAS 網址已成功儲存至瀏覽器！');
+      toggleSettingsModal(false);
+    }
+
+    async function handleSendMessage(e) {
+      e.preventDefault();
+      const input = document.getElementById('chat-input');
+      const text = input.value.trim();
+      if (!text) return;
+
+      const gasUrl = localStorage.getItem(STORAGE_KEY);
+      if (!gasUrl) {
+        appendMessage('user', text);
+        input.value = '';
+        setTimeout(() => {
+          appendMessage('bot', '⚠️ 尚未設定 Google Apps Script 後端網址！\n\n請點擊視窗右上角的 ⚙️（設定按鈕），貼上您的 GAS Web 應用程式網址後再開始交談喔！');
+          toggleSettingsModal(true);
+        }, 300);
+        return;
+      }
+
+      // Display user message
+      appendMessage('user', text);
+      input.value = '';
+      showTyping(true);
+
+      // Record to history
+      chatHistory.push({ role: 'user', content: text });
+
+      try {
+        // Send POST request with text/plain to avoid CORS preflight rejection from Google Apps Script
+        const response = await fetch(gasUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'text/plain;charset=utf-8'
+          },
+          body: JSON.stringify({
+            message: text,
+            history: chatHistory.slice(-6)
+          })
+        });
+
+        const data = await response.json();
+        showTyping(false);
+
+        if (data && data.reply) {
+          appendMessage('bot', data.reply);
+          chatHistory.push({ role: 'assistant', content: data.reply });
+        } else if (data && data.error) {
+          appendMessage('bot', '❌ 後端錯誤：' + (data.error.message || data.error));
+        } else {
+          appendMessage('bot', '收到回應，但格式不符合預期：' + JSON.stringify(data));
+        }
+      } catch (err) {
+        showTyping(false);
+        console.error('Fetch error:', err);
+        appendMessage('bot', '❌ 連線失敗：無法連線至 Google Apps Script 後端。\n\n請檢查：\n1. GAS 是否已「部署為 Web 應用程式」？\n2. 誰可以存取 (Who has access) 是否設定為「所有人 (Anyone)」？\n3. 網址是否正確。');
+      }
+    }
+
+    function appendMessage(sender, messageText) {
+      const container = document.getElementById('chat-messages');
+      const msgDiv = document.createElement('div');
+      
+      const formattedText = messageText.replace(/\n/g, '<br>');
+
+      if (sender === 'user') {
+        msgDiv.className = 'flex justify-end';
+        msgDiv.innerHTML = `
+          <div class="bg-gradient-to-r from-brand-600 to-accent-600 text-white p-3 rounded-2xl rounded-tr-sm shadow-sm max-w-[85%] leading-relaxed">
+            ${formattedText}
+          </div>
+        `;
+      } else {
+        msgDiv.className = 'flex items-start gap-2.5';
+        msgDiv.innerHTML = `
+          <div class="w-7 h-7 rounded-lg bg-slate-900 text-emerald-400 flex-shrink-0 flex items-center justify-center font-bold text-xs">
+            🤖
+          </div>
+          <div class="bg-white p-3 rounded-2xl rounded-tl-sm border border-slate-200/80 shadow-sm text-slate-700 max-w-[85%] leading-relaxed">
+            ${formattedText}
+          </div>
+        `;
+      }
+
+      container.appendChild(msgDiv);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function showTyping(show) {
+      const indicator = document.getElementById('typing-indicator');
+      const container = document.getElementById('chat-messages');
+      if (show) {
+        indicator.classList.remove('hidden');
+      } else {
+        indicator.classList.add('hidden');
+      }
+      container.scrollTop = container.scrollHeight;
+    }
+
+    window.addEventListener('DOMContentLoaded', initChatbot);
+  </script>
+</body>
+</html>
